@@ -2,14 +2,14 @@
 Colors used
 
 Text Color (white): #ffffff;
-Primary Color (Purple): #67468e;
+Primary Color (Purple): #291a3b;
 Secondary Color (pink): #db0d9a, rgb(219, 13, 154);
 Link hover:  #759fc7;
 Link visited: #a69de2;
 Active link: #6d8bc8;
 */
 :root {
-	--primary-color: #67468e;
+	--primary-color: #291a3b;
 	--secondary-color: #db0d9a;
 	--link-hover: #759fc7;
 	--link-visited: #a69de2;
@@ -34,6 +34,10 @@ body {
 h1 {
 	font-size: 30px;
 	font-weight: 600;
+	color: #fff;
+}
+
+h2 {
 	color: #fff;
 }
 
@@ -116,6 +120,7 @@ button:hover, button:focus {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+
 }
 
 .page-header {
@@ -145,6 +150,7 @@ button:hover, button:focus {
 .grid__item {
  display: inline-block;
  width: 33%;
+
 }
 
 @supports (display: grid) {
@@ -160,6 +166,7 @@ button:hover, button:focus {
    width: auto;
    min-height: auto;
    margin: 0;
+   align-content: center;
  }
  .grid__item:last-child {
    grid-column: 3 / 3;
@@ -191,6 +198,14 @@ table {
 	font-family: inherit;
 	color: white;
 	text-align: center;
+}
+
+.social__media a {
+	text-decoration: none;
+}
+
+.social__media a:hover {
+	text-decoration: none;
 }
 
 @keyframes color-change {
