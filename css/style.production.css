@@ -5,7 +5,7 @@
 * Browsers: last 4 version
 */
 
-/* 
+/*
 Colors used
 
 Text Color (white): #ffffff;
@@ -88,7 +88,7 @@ button:hover, button:focus {
 	opacity: 0.8;
 }
 
-.navigation-list__item--active a{
+.navigation-list__item--active a {
 	text-decoration: none;
 
 }
@@ -138,6 +138,9 @@ button:hover, button:focus {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	text-align: center;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 
 }
 
@@ -146,20 +149,22 @@ button:hover, button:focus {
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
-	padding: 20px;
+	padding: 0px;
 }
 
 .page-header__item {
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 1 200px;
-	        flex: 0 1 200px;
+	        flex: 0 1 200px;	
 }
 
 .page-header__item:last-child {
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
-	text-align: right;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 
 .navigation-list {
@@ -210,7 +215,7 @@ button, .button {
 	font-family: var(--font-family-primary);
 	margin: 0 auto;
 	background-color: #db0d9a;
-	color: white;
+	color: #fff;
 	text-decoration: none;
 	padding: 10px;
 	border-radius: 3px;
