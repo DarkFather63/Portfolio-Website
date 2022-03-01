@@ -7,6 +7,13 @@ Secondary Color (pink): #db0d9a, rgb(219, 13, 154);
 Link hover:  #759fc7;
 Link visited: #a69de2;
 Active link: #6d8bc8;
+-site works on:
+ chrome for mac and windows
+ firefox for mac and windows
+ safari for mac
+ edge for windows
+ opera for mac and windows
+-fix color support for ie11 on windows
 */
 :root {
 	--primary-color: #291a3b;
@@ -24,7 +31,9 @@ Active link: #6d8bc8;
 
 
 body {
+	background-color: #291a3b;
 	background-color: var(--primary-color);
+	font-family: 'Montserrat', sans-serif;
 	font-family: var(--font-family-primary);
 	font-weight: 400;
 	font-size: 16px;
@@ -50,12 +59,14 @@ a {
 }
 
 a:visited {
+	color: #a69de2;
 	color: var(--link-visited);
 }
 
 a:hover, a:focus {
 	/* no underline when hovering over a link */
 	text-decoration: none;
+	color: #759fc7;
 	color: var(--link-hover);
 }
 
