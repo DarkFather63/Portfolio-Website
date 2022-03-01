@@ -13,13 +13,13 @@ Active link: #6d8bc8;
  safari for mac
  edge for windows
  opera for mac and windows
--fix color support for ie11 on windows
+-fixed color support for ie11 on windows - fallbacks used
 */
 :root {
 	--primary-color: #291a3b;
 	--secondary-color: #db0d9a;
 	--link-hover: #759fc7;
-	--link-visited: #a69de2;
+	--link-visited: #ba8fff;
 	--active-link: #6d8bc8;
 	--dark-gray: #2b2b2b;
 	--font-family-primary: 'Montserrat', sans-serif;
@@ -59,7 +59,7 @@ a {
 }
 
 a:visited {
-	color: #a69de2;
+	color: #ba8fff;
 	color: var(--link-visited);
 }
 
@@ -126,6 +126,16 @@ button:hover, button:focus {
 	border: 10px 0;
 }
 
+.address {
+	margin: auto;
+	padding: 10px;
+}
+
+.number-email {
+	margin: auto;
+	padding: 10px;
+}
+
 .page-header {
 	display: flex;
 	width: 100%;
@@ -133,7 +143,7 @@ button:hover, button:focus {
 }
 
 .page-header__item {
-	flex: 0 1 200px;	
+	flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
@@ -161,7 +171,7 @@ button:hover, button:focus {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	position: relative;
+	position: static;
 	bottom: 0;
 	width: 100%;
 	height: 100px;
@@ -180,7 +190,7 @@ button:hover, button:focus {
    width: auto;
    min-height: auto;
    margin: 0;
-   align-content: center;
+   place-items: center;
  }
  .grid__item:last-child {
    grid-column: 3 / 3;
@@ -189,7 +199,7 @@ button:hover, button:focus {
 }
 
 button, .button {
-	border:  none;
+	border: none;
 	display: inline-block;
 	font-family: var(--font-family-primary);
 	margin: 0 auto;
@@ -212,6 +222,8 @@ table {
 	font-family: inherit;
 	color: white;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .social__media a {
@@ -284,6 +296,7 @@ table {
 		grid-column: auto / auto;
 		grid-row: auto / auto;
 	}
+
 	h1 {
 		font-size: 22px;
 	}
