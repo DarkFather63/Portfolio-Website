@@ -29,7 +29,6 @@ Active link: #6d8bc8;
 	box-sizing: border-box;
 }
 
-
 body {
 	background-color: #291a3b;
 	background-color: var(--primary-color);
@@ -37,7 +36,6 @@ body {
 	font-family: var(--font-family-primary);
 	font-weight: 400;
 	font-size: 16px;
-
 }
 
 h1 {
@@ -92,7 +90,6 @@ button:hover, button:focus {
 
 .navigation-list__item--active a {
 	text-decoration: none;
-
 }
 
 .profile__portrait {
@@ -162,10 +159,9 @@ button:hover, button:focus {
 .grid__item {
  display: inline-block;
  width: 33%;
-
 }
 
-.page-footer{
+.page-footer {
 	clear: both;
 	display: flex;
 	flex-direction: column;
@@ -177,25 +173,25 @@ button:hover, button:focus {
 }
 
 @supports (display: grid) {
- .grid {
+.grid {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-gap: 20px;
    margin: 10px;
 	 padding: 10px;
+}
 
- }
- .grid__item {
+.grid__item {
    background-color: var(--secondary-color);
    width: auto;
    min-height: auto;
    margin: 0;
    place-items: center;
- }
- .grid__item:last-child {
-   grid-column: 3 / 3;
-   grid-row: 1 / 3;
- }
+  }
+.grid__item:last-child {
+	 grid-column: 3 / 3;
+	 grid-row: 1 / 3;
+   }
 }
 
 button, .button {
@@ -238,7 +234,7 @@ table {
 	0% {
     fill: #edc655;
   }
-  50% {
+50% {
     fill: #fcffad;
   }
   100% {
