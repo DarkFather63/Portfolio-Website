@@ -37,7 +37,6 @@ Active link: #6d8bc8;
 	        box-sizing: border-box;
 }
 
-
 body {
 	background-color: #291a3b;
 	background-color: var(--primary-color);
@@ -45,7 +44,6 @@ body {
 	font-family: var(--font-family-primary);
 	font-weight: 400;
 	font-size: 16px;
-
 }
 
 h1 {
@@ -100,7 +98,6 @@ button:hover, button:focus {
 
 .navigation-list__item--active a {
 	text-decoration: none;
-
 }
 
 .profile__portrait {
@@ -181,10 +178,9 @@ button:hover, button:focus {
 .grid__item {
  display: inline-block;
  width: 33%;
-
 }
 
-.page-footer{
+.page-footer {
 	clear: both;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -201,29 +197,103 @@ button:hover, button:focus {
 }
 
 @supports (display: grid) {
- .grid {
+.grid {
    display: -ms-grid;
    display: grid;
-   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 20px;
+   -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+   grid-template-columns: repeat(3, 1fr);
+   -ms-grid-rows: 1fr 10px 1fr 10px 1fr;
+   grid-template-rows: repeat(3, 1fr);
+   grid-gap: 10px;
    margin: 10px;
 	 padding: 10px;
-
- }
- .grid__item {
-   background-color: var(--secondary-color);
+	 border: 5px;
+}
+.grid > *:nth-child(1) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 1;
+}
+.grid > *:nth-child(2) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 3;
+}
+.grid > *:nth-child(3) {
+		-ms-grid-row: 1;
+		-ms-grid-column: 5;
+}
+.grid > *:nth-child(4) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 1;
+}
+.grid > *:nth-child(5) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 3;
+}
+.grid > *:nth-child(6) {
+		-ms-grid-row: 3;
+		-ms-grid-column: 5;
+}
+.grid > *:nth-child(7) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 1;
+}
+.grid > *:nth-child(8) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 3;
+}
+.grid > *:nth-child(9) {
+		-ms-grid-row: 5;
+		-ms-grid-column: 5;
+}
+.grid div {
+   background-size: cover;
+   background-attachment: fixed;
+}
+.grid__item {
+	 background: url(../img/architecture-city.jpeg) pink;
+   color: #fff;
    width: auto;
-   min-height: auto;
-   margin: 0;
-   place-items: center;
- }
- .grid__item:last-child {
-   -ms-grid-column: 3;
-   grid-column: 3 / 3;
-   -ms-grid-row: 1;
-   -ms-grid-row-span: 2;
-   grid-row: 1 / 3;
+   margin: 10px;
+   padding: 20px;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-transition: 0.2s opacity;
+   -o-transition: 0.2s opacity;
+   transition: 0.2s opacity;
+  }
+
+  .grid__item2 {
+	 background: url(../img/cyberpunk-street.jpeg) pink;
+   color: #fff;
+   width: auto;
+   margin: 10px;
+   padding: 20px;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
+   -webkit-transition: 0.2s opacity;
+   -o-transition: 0.2s opacity;
+   transition: 0.2s opacity;
+  }
+
+.grid__item:last-child {
+	 -ms-grid-column: 3;
+	 grid-column: 3 / 3;
+	 -ms-grid-row: 1;
+	 -ms-grid-row-span: 2;
+	 grid-row: 1 / 3;
+   }
+
+ .grid__item:hover, .grid__item:focus {
+ 	cursor: pointer;
+ 	opacity: 0.7;
  }
 }
 
@@ -269,7 +339,7 @@ table {
 	0% {
     fill: #edc655;
   }
-  50% {
+50% {
     fill: #fcffad;
   }
   100% {
@@ -281,7 +351,7 @@ table {
 	0% {
     fill: #edc655;
   }
-  50% {
+50% {
     fill: #fcffad;
   }
   100% {
@@ -357,7 +427,7 @@ table {
 
 @media all and (min-width: 500px) and (max-width: 500px) {
 	.grid {
-		-ms-grid-columns: 1fr 20px 1fr;
+		-ms-grid-columns: 1fr 10px 1fr;
 		grid-template-columns: 1fr 1fr;
 	}
 }
