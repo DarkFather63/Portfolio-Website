@@ -196,7 +196,7 @@ button:focus {
 	}
 
 	.grid__item1 {
-		background: url() pink;
+		background: url(../img/19742.jpg) pink;
 		color: #f5f2f2;
 		color: var(--tertiary-color);
 		width: auto;
