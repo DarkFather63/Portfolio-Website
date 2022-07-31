@@ -39,7 +39,7 @@ Active link: #6d8bc8;
 }
 
 body {
-	background-color: #291a3b;
+	background: url(../img/hex.jpeg);
 	background-color: var(--primary-color);
 	font-family: 'Montserrat', sans-serif;
 	font-family: var(--font-family-primary);
@@ -270,7 +270,7 @@ button:focus {
 	}
 
 	.grid__item1 {
-		background: url(../img/19742.jpg) pink;
+		background: url(../img/hex.jpeg) pink;
 		color: #f5f2f2;
 		color: var(--tertiary-color);
 		width: auto;
