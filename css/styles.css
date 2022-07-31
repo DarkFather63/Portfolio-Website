@@ -186,6 +186,11 @@ button:focus {
 	height: 2em;
 }
 
+.portfolio_item {
+	color: #f5f2f2;
+	color: var(--tertiary-color);
+}
+
 @supports (display: grid) {
 	.grid {
 		display: grid;
