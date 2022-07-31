@@ -59,12 +59,18 @@ p {
 	color: var(--tertiary-color);
 }
 
+h3 {
+	color: var(--secondary-color);
+}
+
 p {
 	line-height: 2.5em;
 }
 
 textarea {
 	border-radius: 2px;
+	width: 50%;
+	height: 3rem;
 }
 
 a {
