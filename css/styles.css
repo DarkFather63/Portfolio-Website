@@ -195,7 +195,7 @@ button:focus {
 		background-attachment: fixed;
 	}
 
-	.grid__item {
+	.grid__item1 {
 		background: url(../img/hexagon.jpeg) pink;
 		color: #f5f2f2;
 		color: var(--tertiary-color);
