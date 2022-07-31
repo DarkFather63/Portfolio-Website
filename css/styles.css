@@ -132,7 +132,7 @@ button:focus {
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 10px;
-	color: white;
+	color: var(--primary-color);
 	line-height: 2em;
 }
 
@@ -202,9 +202,9 @@ button:focus {
 	}
 
 	.grid__item1 {
-		background: url(../img/hex.jpeg) pink;
-		color: #f5f2f2;
-		color: var(--tertiary-color);
+		background: url(../img/wave.jpeg) pink;
+		color: #291a3b;
+		color: var(--primary-color);
 		width: auto;
 		margin: 10px;
 		padding: 20px;
