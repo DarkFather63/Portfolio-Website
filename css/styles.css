@@ -207,9 +207,6 @@ button:focus {
 		transition: 0.2s opacity;
 	}
 
-	.grid__item2 {
-		background: url(../img/cyberpunk-street.jpeg) pink;
-	}
 
 	.grid__item:last-child {
 		grid-column: 3 / 3;
