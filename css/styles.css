@@ -44,7 +44,9 @@ h1 {
 	font-weight: 600;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
 	color: #f5f2f2;
 	color: var(--tertiary-color);
 }
@@ -67,7 +69,8 @@ a:visited {
 	color: var(--link-visited);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
 	text-decoration: none;
 	color: #c25da3;
 	color: var(--link-hover);
@@ -89,7 +92,8 @@ button {
 	border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
 	cursor: pointer;
 	opacity: 0.8;
 }
@@ -131,7 +135,7 @@ button:hover, button:focus {
 	border: 10px 0;
 }
 
-.address .number-email{
+.address .number-email {
 	margin: auto;
 	padding: 10px;
 }
@@ -161,8 +165,8 @@ button:hover, button:focus {
 }
 
 .grid__item {
- display: inline-block;
- width: 33%;
+	display: inline-block;
+	width: 33%;
 }
 
 .page-footer {
@@ -176,49 +180,51 @@ button:hover, button:focus {
 }
 
 @supports (display: grid) {
-		.grid {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-template-rows: repeat(3, 1fr);
-			grid-gap: 10px;
-			margin: 10px;
-			padding: 10px;
-			border: 5px;
-		}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-gap: 10px;
+		margin: 10px;
+		padding: 10px;
+		border: 5px;
+	}
 
-		.grid div {
-			background-size: cover;
-			background-attachment: fixed;
-		}
+	.grid div {
+		background-size: cover;
+		background-attachment: fixed;
+	}
 
-		.grid__item {
-			background: url(../img/architecture-city.jpeg) pink;
-			color: #f5f2f2;
-			color: var(--tertiary-color);
-			width: auto;
-			margin: 10px;
-			padding: 20px;
-			justify-content: center;
-			align-items: center;
-			transition: 0.2s opacity;
-		  }
+	.grid__item {
+		background: url(../img/hexagon.jpeg) pink;
+		color: #f5f2f2;
+		color: var(--tertiary-color);
+		width: auto;
+		margin: 10px;
+		padding: 20px;
+		justify-content: center;
+		align-items: center;
+		transition: 0.2s opacity;
+	}
 
-		.grid__item2 {
-			background: url(../img/cyberpunk-street.jpeg) pink;
-		  }
+	.grid__item2 {
+		background: url(../img/cyberpunk-street.jpeg) pink;
+	}
 
-		.grid__item:last-child {
-			grid-column: 3 / 3;
-			grid-row: 1 / 3;
-		   }
+	.grid__item:last-child {
+		grid-column: 3 / 3;
+		grid-row: 1 / 3;
+	}
 
-		.grid__item:hover, .grid__item:focus {
-			cursor: pointer;
-			opacity: 0.7;
-		 }
+	.grid__item:hover,
+	.grid__item:focus {
+		cursor: pointer;
+		opacity: 0.7;
+	}
 }
 
-button, .button {
+button,
+.button {
 	border: none;
 	display: inline-block;
 	font-family: var(--font-family-primary);
@@ -233,7 +239,10 @@ button, .button {
 	transition: 0.2s opacity;
 }
 
-button:hover, button:focus, .button:hover, .button:focus {
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
 	cursor: pointer;
 	opacity: 0.8;
 }
@@ -265,41 +274,45 @@ table {
 	padding: 2em;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 }
 
 @keyframes color-change {
 	0% {
-    fill: #edc655;
-  }
+		fill: #edc655;
+	}
+
 	50% {
-    fill: #fcffad;
-  }
+		fill: #fcffad;
+	}
+
 	100% {
-    fill: #f76414;
-  }
+		fill: #f76414;
+	}
 }
 
 @keyframes cloud-move {
-  from {
-    transform: translate(0, 50px);
-  }
-  to {
-    transform: translate(200px, 50px);
-  }
+	from {
+		transform: translate(0, 50px);
+	}
+
+	to {
+		transform: translate(200px, 50px);
+	}
 }
 
 @keyframes cloud-move-reverse {
-  from {
-    transform: translate(446px, 48px);
-  }
-  to {
-    transform: translate(100px, 48px);
-  }
+	from {
+		transform: translate(446px, 48px);
+	}
+
+	to {
+		transform: translate(100px, 48px);
+	}
 }
 
 .cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+	animation: 30s cloud-move infinite alternate linear;
 }
 
 .sun {
@@ -307,7 +320,7 @@ table {
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+	animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @media all and (max-width: 500px) {
@@ -326,6 +339,7 @@ table {
 	.grid {
 		grid-gap: 10px;
 	}
+
 	.grid__item:last-child {
 		grid-column: auto / auto;
 		grid-row: auto / auto;
