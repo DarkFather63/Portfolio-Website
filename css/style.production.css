@@ -5,7 +5,6 @@
 * Browsers: last 4 version
 */
 
-
 /*
 Colors used
 
@@ -78,11 +77,13 @@ textarea {
 a {
 	color: #db0d9a;
 	color: var(--secondary-color);
+	text-decoration: none;
 }
 
 a:visited {
 	color: #ba8fff;
 	color: var(--link-visited);
+	text-decoration: none;
 }
 
 a:hover,
@@ -95,6 +96,7 @@ a:focus {
 a:active {
 	color: #ab6dc8;
 	color: var(--active-link);
+	text-decoration: none;
 }
 
 button {
