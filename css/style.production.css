@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 /*
 Colors used
 
@@ -57,6 +58,7 @@ h2,
 p {
 	color: #291a3b;
 	color: var(--primary-color);
+	text-decoration: none;
 }
 
 h3 {
@@ -147,7 +149,7 @@ button:focus {
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 10px;
-	color: white;
+	color: var(--primary-color);
 	line-height: 2em;
 }
 
@@ -209,6 +211,11 @@ button:focus {
 	margin-top: 15em;
 	width: 100%;
 	height: 2em;
+}
+
+.portfolio_item {
+	color: #f5f2f2;
+	color: var(--tertiary-color);
 }
 
 @supports (display: grid) {
@@ -276,9 +283,9 @@ button:focus {
 	}
 
 	.grid__item1 {
-		background: url(../img/hex.jpeg) pink;
-		color: #f5f2f2;
-		color: var(--tertiary-color);
+		background: url(../img/wave.jpeg) pink;
+		color: #291a3b;
+		color: var(--primary-color);
 		width: auto;
 		margin: 10px;
 		padding: 20px;
