@@ -69,11 +69,13 @@ textarea {
 a {
 	color: #db0d9a;
 	color: var(--secondary-color);
+	text-decoration: none;
 }
 
 a:visited {
 	color: #ba8fff;
 	color: var(--link-visited);
+	text-decoration: none;
 }
 
 a:hover,
