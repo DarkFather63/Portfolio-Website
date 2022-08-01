@@ -43,30 +43,61 @@
 		</nav>
 	</header>
 
+	<head class="dropdown-menu">
+		<div class="dropdown">
+			<button class="dropdown-btn">Menu</button>
+			<div class="dropdown-content">
+				<a href="index.html" role="menuitem">Home</a>
+				<a href="about.html" role="menuitem">About</a>
+				<a href="contact.html" role="menuitem">Contact</a>
+				<a href="work.html" role="menuitem">Work</a>
+			</div>
+		</div>
+	</head>
+
 	<section>
 
 		<h1 class="profile">Work</h1>
+		<p class="profile">Click on any of the tiles below to visit the related app or website.</p>
 		<div class="grid">
 			<div class="grid__item grid__item1">
-				<a href="https://darkfather63.github.io/meet/">
+				<a href="https://darkfather63.github.io/meet/" target="_blank">
 					<h2 class="portfolio_item">
 						Meet App
 					</h2>
 				</a>
+				<p class="work_description">
+					This app was created using React and a test-driven development approach. Its primary function is to show
+					developers around the world events close to them related to web development. It also uses Google's Calendar
+					API.
+				</p>
 			</div>
 
 			<div class="grid__item grid__item1">
-				<a href="https://erynsawesomemyflix.netlify.app/">
+				<a href="https://erynsawesomemyflix.netlify.app/" target="_blank">
 					<h2 class="portfolio_item">
 						myFlix Web App
 					</h2>
 				</a>
+				<p class="work_description">
+					This app was created completely from scratch, from the server-side to the client-side. I created the API and
+					database myself, and went on to create the front-end using React and Bootstrap. It is built using MERN stack
+					technology. To log in:
+					User: Test4
+					Pass: 1234567
+				</p>
 			</div>
 
 			<div class="grid__item grid__item1">
-				<h2 class="portfolio_item">
-					Pokedex app
-				</h2>
+				<a href="https://darkfather63.github.io/Pokedex/" target="_blank">
+					<h2 class="portfolio_item">
+						Pokedex app
+					</h2>
+				</a>
+				<p class="work_description">
+					The Pokedex app was created with pure Javascript, HTML and CSS. It was my first foray into Javascript, and
+					borrowed data from a Pokemon API.
+				</p>
 			</div>
 
 			<div class="grid__item grid__item1">
@@ -92,7 +123,7 @@
 
 	<footer class="page-footer">
 
-		<p>Find me online:</p>
+		<p class="page-footer">Find me online:</p>
 		<div class="social__media">
 			<a href="https://twitter.com/erynbyte" target="blank">
 				<img src="img/socialicons/1217098_twitter_icon_pink.svg" alt="Twitter Logo">
@@ -104,11 +135,11 @@
 				<img src="img/socialicons/4747499_github_icon_pink.svg" alt="Github Logo">
 			</a>
 		</div>
-		<div>
+		<div class="credits">
 			<p>Image credits:
-				<a href='https://www.freepik.com/vectors/honeycomb-pattern'>Honeycomb pattern vector created by starline -
-					www.freepik.com</a>
 				<a href='https://www.freepik.com/photos/technology-wave'>Technology wave photo created by rawpixel.com -
+					www.freepik.com</a>
+				<a href='https://www.freepik.com/vectors/polygon-shape'>Polygon shape vector created by freepik -
 					www.freepik.com</a>
 			</p>
 		</div>
