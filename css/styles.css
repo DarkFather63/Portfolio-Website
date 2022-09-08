@@ -31,7 +31,7 @@ Active link: #6d8bc8;
 }
 
 body {
-	background: url(../img/hex.jpeg);
+	background: url(../img/5570863.jpg);
 	background-color: var(--primary-color);
 	font-family: 'Montserrat', sans-serif;
 	font-family: var(--font-family-primary);
@@ -49,6 +49,7 @@ h2,
 p {
 	color: #291a3b;
 	color: var(--primary-color);
+	text-decoration: none;
 }
 
 h3 {
@@ -56,7 +57,8 @@ h3 {
 }
 
 p {
-	line-height: 2.5em;
+	line-height: 2.0em;
+	text-align: justify;
 }
 
 textarea {
@@ -68,11 +70,13 @@ textarea {
 a {
 	color: #db0d9a;
 	color: var(--secondary-color);
+	text-decoration: none;
 }
 
 a:visited {
 	color: #ba8fff;
 	color: var(--link-visited);
+	text-decoration: none;
 }
 
 a:hover,
@@ -85,6 +89,7 @@ a:focus {
 a:active {
 	color: #ab6dc8;
 	color: var(--active-link);
+	text-decoration: none;
 }
 
 button {
@@ -119,11 +124,12 @@ button:focus {
 .profile {
 	max-width: 700px;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 2.5em;
 	text-align: center;
 	flex: 1 0 auto;
 	margin-bottom: auto;
 }
+
 
 .contact {
 	display: flex;
@@ -132,7 +138,7 @@ button:focus {
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 10px;
-	color: white;
+	color: var(--primary-color);
 	line-height: 2em;
 }
 
@@ -140,6 +146,7 @@ button:focus {
 	padding: 10px;
 	border: 10px 0;
 }
+
 
 .address .number-email {
 	margin: auto;
@@ -149,11 +156,12 @@ button:focus {
 .page-header {
 	display: flex;
 	width: 100%;
-	padding: 20px;
+	padding: 10px;
 }
 
 .page-header__item {
 	flex: 0 1 200px;
+	text-transform: uppercase;
 }
 
 .page-header__item:last-child {
@@ -170,9 +178,18 @@ button:focus {
 	margin-left: 15px;
 }
 
+nav {
+	overflow: hidden;
+}
+
 .grid__item {
 	display: inline-block;
 	width: 33%;
+}
+
+.work_description {
+	color: #ff8ff8;
+	color: var(--link-visited);
 }
 
 .page-footer {
@@ -181,8 +198,18 @@ button:focus {
 	flex-direction: column;
 	text-align: center;
 	margin-top: 15em;
-	width: 100%;
+	width: 100vw;
 	height: 2em;
+}
+
+.portfolio_item {
+	color: #ff8ff8;
+	color: var(--link-visited);
+}
+
+.dropdown,
+.dropdown-btn {
+	display: none;
 }
 
 @supports (display: grid) {
@@ -202,14 +229,15 @@ button:focus {
 	}
 
 	.grid__item1 {
-		background: url(../img/hex.jpeg) pink;
-		color: #f5f2f2;
-		color: var(--tertiary-color);
+		background: url(../img/wave.jpeg) pink;
+		color: #291a3b;
+		color: var(--primary-color);
 		width: auto;
 		margin: 10px;
 		padding: 20px;
 		justify-content: center;
 		align-items: center;
+		opacity: 80%;
 		transition: 0.2s opacity;
 	}
 
@@ -330,7 +358,71 @@ table {
 	.grid {
 		grid-template-columns: 1fr;
 	}
+
+	.profile__portrait {
+		display: grid;
+		grid-template-columns: 1fr;
+		float: left;
+		width: 50vw;
+		margin-right: 4em;
+		margin-bottom: 10px;
+		margin-left: 4em;
+		align-items: center;
+	}
+
+	.profile {
+		display: grid;
+		grid-template-columns: 1fr;
+		margin: 10px;
+		text-align: center;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.dropdown,
+	.dropdown-btn {
+		display: inline-block;
+		color: var(--dark-gray);
+		font-family: inherit;
+		margin: 0.5em;
+		align-items: inherit;
+
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		float: none;
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	.dropdown-btn:visited {
+		color: var(--tertiary-color);
+	}
 }
+
+
 
 @media all and (min-width: 500px) and (max-width: 500px) {
 	.grid {
