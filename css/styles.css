@@ -192,6 +192,11 @@ nav {
 	color: var(--link-visited);
 }
 
+.work_image {
+	width: 200px;
+	height: auto;
+}
+
 .page-footer {
 	clear: both;
 	display: flex;
