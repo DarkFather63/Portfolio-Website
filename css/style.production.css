@@ -124,6 +124,7 @@ button:focus {
 .profile__portrait {
 	float: left;
 	width: 300px;
+	height: auto;
 	margin-right: 40px;
 	border-radius: 50%;
 	border: 5px solid var(--secondary-color);
@@ -132,12 +133,31 @@ button:focus {
 .profile {
 	max-width: 700px;
 	margin: 0 auto;
-	padding: 2.5em;
+	padding: 1.5em;
 	text-align: center;
 	-webkit-box-flex: 1;
 	-ms-flex: 1 0 auto;
 	flex: 1 0 auto;
 	margin-bottom: auto;
+}
+
+.about {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+#tool-thumbnails {
+	padding: 50px;
+	margin: 50px;
+}
+
+.iconify {
+	padding: 15px;
+}
+
+#resume {
+	margin: 60px;
 }
 
 
@@ -150,6 +170,9 @@ button:focus {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	text-align: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 10px;
@@ -214,7 +237,7 @@ nav {
 }
 
 .work_image {
-	width: 200px;
+	width: 300px;
 	height: auto;
 }
 
@@ -307,8 +330,9 @@ nav {
 		background-attachment: fixed;
 	}
 
+	/* url(../img/wave.jpeg)  - used for background originally */
 	.grid__item1 {
-		background: url(../img/wave.jpeg) pink;
+		background: rgb(0, 0, 0);
 		color: #291a3b;
 		color: var(--primary-color);
 		width: auto;
@@ -320,7 +344,7 @@ nav {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
-		opacity: 80%;
+		opacity: 90%;
 		-webkit-transition: 0.2s opacity;
 		-o-transition: 0.2s opacity;
 		transition: 0.2s opacity;

@@ -116,6 +116,7 @@ button:focus {
 .profile__portrait {
 	float: left;
 	width: 300px;
+	height: auto;
 	margin-right: 40px;
 	border-radius: 50%;
 	border: 5px solid var(--secondary-color);
@@ -124,10 +125,27 @@ button:focus {
 .profile {
 	max-width: 700px;
 	margin: 0 auto;
-	padding: 2.5em;
+	padding: 1.5em;
 	text-align: center;
 	flex: 1 0 auto;
 	margin-bottom: auto;
+}
+
+.about {
+	justify-content: center;
+}
+
+#tool-thumbnails {
+	padding: 50px;
+	margin: 50px;
+}
+
+.iconify {
+	padding: 15px;
+}
+
+#resume {
+	margin: 60px;
 }
 
 
@@ -135,6 +153,7 @@ button:focus {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	justify-content: center;
 	max-width: 700px;
 	margin: 0 auto;
 	padding: 10px;
@@ -193,7 +212,7 @@ nav {
 }
 
 .work_image {
-	width: 200px;
+	width: 300px;
 	height: auto;
 }
 
@@ -233,8 +252,9 @@ nav {
 		background-attachment: fixed;
 	}
 
+	/* url(../img/wave.jpeg)  - used for background originally */
 	.grid__item1 {
-		background: url(../img/wave.jpeg) pink;
+		background: rgb(0, 0, 0);
 		color: #291a3b;
 		color: var(--primary-color);
 		width: auto;
@@ -242,7 +262,7 @@ nav {
 		padding: 20px;
 		justify-content: center;
 		align-items: center;
-		opacity: 80%;
+		opacity: 90%;
 		transition: 0.2s opacity;
 	}
 
